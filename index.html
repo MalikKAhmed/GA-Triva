@@ -1,1 +1,49 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>League of Trivia</h1>
+    <form id="quiz" name="quiz">
+        <p>What Genre does League of Legends fall under?</p>
+        <input type="radio" id="choice" name="question1" value="MOBA"> MOBA <br>
+        <input type="radio" id="choice" name="question1" value="FPS"> FPS <br>
+        <input type="radio" id="choice" name="question1" value="Sports"> Sports <br>
+        <input type="radio" id="choice" name="question1" value="Simulation"> Simulation <br>
+
+        <p>What are the characters that you play called?</p>
+        <input type="radio" id="choice" name="question2" value="Heros"> Heros <br>
+        <input type="radio" id="choice" name="question2" value="Sprites"> Sprites<br>
+        <input type="radio" id="choice" name="question2" value="Digi Dudes"> Digi Dudes<br>
+        <input type="radio" id="choice" name="question2" value="Champions"> Champions <br>
+
+        <p>How many players are in one team?</p>
+        <input type="radio" id="choice" name="question3" value="5"> 5 <br>
+        <input type="radio" id="choice" name="question3" value="2"> 2 <br>
+        <input type="radio" id="choice" name="question3" value="8"> 8 <br>
+        <input type="radio" id="choice" name="question3" value="10"> 10 <br>
+
+        <p>What is META?</p>
+        <input type="radio" id="choice" name="question4" value="Fancy way of saying best strategy to win the game currently"> Fancy way of saying best strategy to win the game currently<br>
+        <input type="radio" id="choice" name="question4" value="Must Enter Teams Akwardly"> Must Enter Teams Akwardly <br>
+        <input type="radio" id="choice" name="question4" value="Nothing, it means nothing at all"> Nothing, it means nothing at all <br>
+
+        <p>What season are we in?</p>
+        <input type="radio" id="choice" name="question5" value="Season 1"> Season 1 <br>
+        <input type="radio" id="choice" name="question5" value="Season 8"> Season 8 <br>
+        <input type="radio" id="choice" name="question5" value="Season 6"> Season 6 <br>
+        <input type="radio" id="choice" name="question5" value="Season 10"> Season 10 <br>
+
+        <input id="button" type="button" value="GG" onclick="check();">
+    </form>
+    <div id="after_submit">
+        <p id="number_correct"></p>
+    </div>
+</body>
+</html>
