@@ -21,6 +21,29 @@ function check () {
   if (question5 == 'Season 8') {
     correct++
   }
+  var ranks = ['Bronze', 'Silver', 'Gold', 'Platinum', 'Diamond']
+  var tiers = ['ranks/bronze.png', 'ranks/Silver.png', 'ranks/gold.png', 'ranks/plat.png', 'ranks/diamond.png']
+
+  var score
+
+  if (correct <= 1) {
+    score = 0
+  }
+  if (correct > 0 && correct <= 2) {
+    score = 1
+  }
+  if (correct > 1 && correct <= 3) {
+    score = 2
+  }
+  if (correct > 3 && correct <= 4) {
+    score = 3
+  }
+  if (correct > 4) {
+    score = 4
+  }
   document.getElementById('after_submit').style.visibility = 'visible'
-  document.getElementById('number_correct').innerHTML = 'You got ' + correct + ' correct.';
+
+  document.getElementById('number_correct').innerHTML = 'You got ' + correct + ' correct.'
+  document.getElementById('tier').innerHTML = ranks[score]
+  document.getElementById('rank').src = tiers[score]
 }
