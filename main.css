@@ -1,12 +1,13 @@
 body {
-    background-color: #2B303A;
+    background-color: #2b303a;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
     font-family:'Nunito', sans-serif;
     color: 
 }
 
 .container {
-    border: 2px solid #564787;
-    background-color: #564787;
+    border: 2px solid #56478788;
+    background-color: #56478788 ;
     max-width: 700px;
     margin: 2rem auto;
     padding: 2rem;
@@ -18,30 +19,41 @@ h1 {
     color: #FDCA40;
 }
 #quiz {
-    border: 2px solid #FDCA40;
+    border: 2px solid rgba(253, 203, 64, 0.39);
     border-radius: 2rem;
-    background-color: #FDCA40;
+    background-color: rgba(253, 203, 64, 0.418);
 
     padding: 2rem;
 }
 
 #button {
     border: none;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 20px;
-    background-color: #A288E3;
+    background-color: rgba(162, 136, 227, 0.61);
     border-radius: 12rem;
-    
+    font-family: 'Bungee Shade'; font-size: 40px;
+    outline: none;
 }
 #button:hover {
     border: none;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 20px;
-    background-color: rgb(200, 185, 238);
+    background-color: rgb(200, 185, 238, 0.61);
     cursor: pointer;
+    color: rgb(92, 102, 122);
+    font-family: 'Bungee Shade'; font-size: 40px;
+    outline: none;
 }
 
 #after_submit {
     color: #FDCA40;
     font-size: 2rem; 
+    font-family: 'Bungee Shade';
+
+}
+
+#choice:hover {
+    cursor: pointer;
+    
 }
